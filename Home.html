@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We offer the finest selection of beverages to quench your thirst.">
+    <meta name="keywords" content="wine, beverages, store, wine tasting, gourmet pairings, premium wines"> <!-- Added content for keywords -->
+    <title>We Are Stars</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to We Are Stars</h1>
+    </header>
+
+    <nav>
+        <div class="brand">Our Store</div>
+        <div class="links">
+            <a data-active="home" href="Home.html">Home</a>
+            <a data-active="menu" href="Menu.html">Menu</a>
+            <a data-active="services" href="services.html">Services</a>
+            <a data-active="contact" href="Contact.html">Contact</a>
+            <a data-active="checkout" href="CheckOut.html">Checkout</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Welcome to our Home page</h1>
+        <p class="sub-title">Connecting talent with the perfect casting professionals.</p>
+
+        <section>
+            <h2>About We Are Stars</h2>
+        <p>Welcome to <strong>We Are Stars</strong>, the premier platform connecting exceptional talent with top casting professionals. Our mission is simple: to ensure that no talent goes undiscovered. Whether you're an aspiring actor, influencer, or creative artist, we provide a space to showcase your skills and connect with industry leaders.</p>
+
+            <p>We work with some of the biggest production houses and talent agencies, both in Australia and internationally. Our members gain exclusive access to casting calls, professional networking opportunities, and career-enhancing resources.</p>
+
+            <p>At <strong>We Are Stars</strong>, we value originality, passion, and commitment. Our promise to talent and casting professionals includes:</p>
+            <ul>
+            <li>Understanding and supporting each individual’s unique ambitions</li>
+            <li>Providing expert marketing, media, and PR support</li>
+            <li>Ensuring every opportunity leads to success</li>
+            <li>Maintaining a trusted, secure, and professional platform</li>
+            </ul>
+
+            <p>Join us today and take the next step toward your dream career. Your talent deserves to shine, and we are here to make that happen! ✨</p>
+
+        </section>
+
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="Pictures/P4.webp" alt="Image 2">
+                <img src="Pictures/P5.webp" alt="Image 3">
+                <img src="Pictures/P6.webp" alt="Image 4">
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+         <a href='Signup.html'>Join Now</a>  <a href='login.html'>Login</a>
+
+        <h1><a href="logout.html">Logout</a></h1>
+
+        Our store's footer
+
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const imagesContainer = document.querySelector(".carousel-images");
+        const images = document.querySelectorAll(".carousel-images img");
+        let index = 0;
+
+        function nextImage() {
+          index++;
+          // If we reach the end, start from the beginning
+          if (index >= images.length) {
+            index = 0;
+          }
+          imagesContainer.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        // Change image every 2.5 seconds (2500 ms)
+        setInterval(nextImage, 2500);
+      });
+    </script>
+
+</body>
+</html>
